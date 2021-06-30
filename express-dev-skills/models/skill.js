@@ -1,10 +1,10 @@
 const skills = [
-    {skill: 'HTML', done: true},
-    {skill: 'CSS', done: true},
-    {skill: 'JavaScript', done: true},
-    {skill: 'Node', done: false},
-    {skill: 'Express', done: false},
-    {skill: 'React', done: false},
+    {skill: 'HTML', mastered: true},
+    {skill: 'CSS', mastered: true},
+    {skill: 'JavaScript', mastered: true},
+    {skill: 'Node', mastered: false},
+    {skill: 'Express', mastered: false},
+    {skill: 'React', mastered: false},
   ];
   
   module.exports = {
