@@ -4,7 +4,7 @@ const skills = [
     {skill: 'JavaScript', mastered: true},
     {skill: 'Node', mastered: false},
     {skill: 'Express', mastered: false},
-    {skill: 'React', mastered: false},
+    {skill: 'React', mastered: false}
 ];
   
 module.exports = {
