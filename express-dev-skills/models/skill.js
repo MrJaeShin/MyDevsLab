@@ -5,17 +5,33 @@ const skills = [
     {skill: 'Node', mastered: false},
     {skill: 'Express', mastered: false},
     {skill: 'React', mastered: false},
-  ];
+];
   
-  module.exports = {
-    getAll,
-    getOne
-  };
+module.exports = {
+  getAll,
+  getOne,
+  create,
+  deleteOne,
+  updateOne
+};
   
-  function getAll() {
-    return skills;
-  }
+function getOne(id) {
+  return skills[id]
+}
 
-  function getOne(id) {
-    return skills[id]
-  }
+function getAll() {
+  return skills;
+}
+
+
+function create(todo) {
+  skills.push(skill);
+}
+  
+function deleteOne(id) {
+  skills.splice(id, 1);
+}
+  
+function updateOne(id, body) {
+  skills[id] = body;
+}
