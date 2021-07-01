@@ -30,7 +30,7 @@ function newSkill(req, res) {
   
 function create(req, res) {
 	// console.log(req.body);
-	req.body.done = false;
+	req.body.mastered = false;
 	Skill.create(req.body);
 	res.redirect('/skills');
 }
@@ -50,5 +50,5 @@ function edit(req, res) {
 function update(req, res) {
 	res.redirect('/skills'),
 	Skill.updateOne(req.params.id, req.body),
-	req.body.done ? true : false
+	req.body.mastered ? true : false
 }
