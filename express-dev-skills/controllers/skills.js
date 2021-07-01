@@ -43,7 +43,7 @@ function deleteSkill(req, res) {
 function edit(req, res) {
 	res.render('skills/edit', {
 	  	idx: req.params.id,
-	  	todo: Skill.getOne(req.params.id)
+	  	skill: Skill.getOne(req.params.id)
 	});
 }
   
