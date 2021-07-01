@@ -23,8 +23,7 @@ function getAll() {
   return skills;
 }
 
-
-function create(todo) {
+function create(skill) {
   skills.push(skill);
 }
   
